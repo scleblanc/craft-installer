@@ -8,7 +8,7 @@ as part of an ansible provisioning role, like so:
 
 ```
 - name: installing craft
-  shell: "curl -G 'http://aws-project.nmc/install.php' --data-urlencode 'username={{ craft_user }}' --data-urlencode 'email={{ craft_email }}' --data-urlencode 'password={{ craft_password }}' --data-urlencode 'site_name={{ craft_title }}' --data-urlencode 'project_name={{ app }}'"
+  shell: "curl -G 'http://my-project.dev/install.php' --data-urlencode 'username={{ craft_user }}' --data-urlencode 'email={{ craft_email }}' --data-urlencode 'password={{ craft_password }}' --data-urlencode 'site_name={{ craft_title }}' --data-urlencode 'project_name={{ app }}'"
 ```
 
 Some notes to keep in mind:
