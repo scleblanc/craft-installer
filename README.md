@@ -4,7 +4,7 @@ This repo contains a script to install Craft CMS programmatically
 rather than having to go through the web installer. 
 
 In the original use case, this script was used to install Craft 
-as part of an Ansible provisioning role, like so:
+as part of an Ansible role, like so:
 
 ```
 - name: installing craft
