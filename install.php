@@ -1,4 +1,6 @@
 <?php
+
+// Craft includes a bootstrap file that returns a Craft WebApp
 $craft = require realpath("../craft/app/bootstrap.php");
 $inputs = 
 [
@@ -9,5 +11,9 @@ $inputs =
 	'siteName' => $_REQUEST['site_name'],
 	'siteUrl' => $_REQUEST['project_name'].".dev", // or .whatever
 ];
+
+// Initialize the WebApp
 $craft->init();
+
+// Run the installer using Craft's InstallService
 $craft->install->run($inputs);
